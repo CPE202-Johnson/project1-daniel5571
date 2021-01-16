@@ -31,19 +31,16 @@ class TestBaseConvert(unittest.TestCase):
         self.assertEqual(convert(11259375,16),"ABCDEF")
 
     def test_base16_fourth(self):
-        self.assertEqual(convert(27, 16), '1B')
+        self.assertEqual(convert(12, 16), 'C')
 
     def test_base16_fifth(self):
-        self.assertEqual(convert(28, 16), '1C')
+        self.assertEqual(convert(13, 16), 'D')
 
     def test_base16_sixth(self):
-        self.assertEqual(convert(29, 16), '1D')
+        self.assertEqual(convert(14, 16), 'E')
 
     def test_base16_seventh(self):
-        self.assertEqual(convert(30, 16), '1E')
-
-    def test_base16_eigth(self):
-        self.assertEqual(convert(31, 16), '1F')
+        self.assertEqual(convert(15, 16), 'F')
 
 
 if __name__ == "__main__":
