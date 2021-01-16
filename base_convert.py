@@ -21,4 +21,4 @@ def convert(num, b):
     newstring = newstring + str(remainder)
     return convert(quotient, b) + newstring
 
-print(convert(45, 2))
+print(convert(143, 16))
