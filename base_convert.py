@@ -35,5 +35,3 @@ def convert(num, b):
         remainder = 'F'
     newstring = newstring + str(remainder)
     return convert(quotient, b) + newstring
-
-print(convert(143, 12))
