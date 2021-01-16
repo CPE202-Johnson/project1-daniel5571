@@ -1,7 +1,6 @@
 #input is number and base, output is string consisting of numbers
 #takes a number and does a base conversion
 def convert(num, b):
-    print(num)
     newstring = ''
     if num // b == 0:        #base case
         if num % b < 10:
@@ -35,3 +34,5 @@ def convert(num, b):
         remainder = 'F'
     newstring = newstring + str(remainder)
     return convert(quotient, b) + newstring
+
+print(convert(30, 4))
