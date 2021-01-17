@@ -5,7 +5,7 @@ def convert(num, b):
     if num // b == 0:        #base case
         if num % b < 10:
             return newstring + str(num % b)                           #add remainder to string
-        else:
+        else:                           #checks for the special cases at the base case
             if num % b == 10:
                 return newstring + 'A'
             elif num % b == 11:
@@ -20,7 +20,7 @@ def convert(num, b):
                 return newstring + 'F'
     quotient = num // b
     remainder = num % b
-    if remainder == 10:
+    if remainder == 10:            #checks for special cases in general
         remainder = 'A'
     elif remainder == 11:
         remainder = 'B'
